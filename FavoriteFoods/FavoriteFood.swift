@@ -1,5 +1,5 @@
 //
-//  Food.swift
+//  FavoriteFood.swift
 //  FavoriteFoods
 //
 //  Created by Ryan Plitt on 10/11/23.

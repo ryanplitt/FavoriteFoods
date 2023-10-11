@@ -1,20 +1,18 @@
 import UIKit
 
-class AthleteFormViewController: UIViewController {
+class FoodFormViewController: UIViewController {
+    
+    @IBOutlet weak var foodTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
     
     struct PropertyKeys {
-        static let unwindToListSegue = "unwindToAthleteTableViewController"
+        static let unwindToListSegue = "unwindToFoodsTableViewController"
     }
     
-    var athlete: Athlete?
+    var favoriteFood: FavoriteFood?
     
-    @IBOutlet var nameTextField: UITextField!
-    @IBOutlet var ageTextField: UITextField!
-    @IBOutlet var leagueTextField: UITextField!
-    @IBOutlet var teamTextField: UITextField!
-    
-    init?(coder: NSCoder, athlete: Athlete?) {
-        self.athlete = athlete
+    init?(coder: NSCoder, favoriteFood: FavoriteFood?) {
+        self.favoriteFood = favoriteFood
         super.init(coder: coder)
     }
     
@@ -28,24 +26,19 @@ class AthleteFormViewController: UIViewController {
     }
     
     func updateView() {
-        guard let athlete = athlete else {
+        guard let favoriteFood else {
             return
         }
         
-        nameTextField.text = athlete.name
-        ageTextField.text = String(athlete.age)
-        leagueTextField.text = athlete.league
-        teamTextField.text = athlete.team
+        nameTextField.text = favoriteFood.name
+        foodTextField.text = favoriteFood.food
     }
     
     @IBAction func save(_ sender: Any) {
         guard let name = nameTextField.text,
-            let ageString = ageTextField.text,
-            let age = Int(ageString),
-            let league = leagueTextField.text,
-            let team = teamTextField.text else { return }
+            let food = foodTextField.text else { return }
                 
-        athlete = Athlete(name: name, age: age, league: league, team: team)
+        favoriteFood = FavoriteFood(name: name, food: food)
         
         performSegue(withIdentifier: PropertyKeys.unwindToListSegue, sender: self)
     }

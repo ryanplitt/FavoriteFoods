@@ -13,7 +13,8 @@
 		FBCADB612AD6C47000C70504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCADB602AD6C47000C70504 /* Assets.xcassets */; };
 		FBCADB642AD6C47000C70504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCADB622AD6C47000C70504 /* LaunchScreen.storyboard */; };
 		FBCADB6C2AD6C49F00C70504 /* FoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCADB6B2AD6C49F00C70504 /* FoodsTableViewController.swift */; };
-		FBCADB6E2AD6C6A700C70504 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCADB6D2AD6C6A700C70504 /* Food.swift */; };
+		FBCADB6E2AD6C6A700C70504 /* FavoriteFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCADB6D2AD6C6A700C70504 /* FavoriteFood.swift */; };
+		FBCADB702AD6C7BB00C70504 /* FoodFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCADB6F2AD6C7BB00C70504 /* FoodFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		FBCADB632AD6C47000C70504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBCADB652AD6C47000C70504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBCADB6B2AD6C49F00C70504 /* FoodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsTableViewController.swift; sourceTree = "<group>"; };
-		FBCADB6D2AD6C6A700C70504 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		FBCADB6D2AD6C6A700C70504 /* FavoriteFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFood.swift; sourceTree = "<group>"; };
+		FBCADB6F2AD6C7BB00C70504 /* FoodFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,8 @@
 				FBCADB572AD6C46F00C70504 /* AppDelegate.swift */,
 				FBCADB592AD6C46F00C70504 /* SceneDelegate.swift */,
 				FBCADB6B2AD6C49F00C70504 /* FoodsTableViewController.swift */,
-				FBCADB6D2AD6C6A700C70504 /* Food.swift */,
+				FBCADB6F2AD6C7BB00C70504 /* FoodFormViewController.swift */,
+				FBCADB6D2AD6C6A700C70504 /* FavoriteFood.swift */,
 				FBCADB5D2AD6C46F00C70504 /* Main.storyboard */,
 				FBCADB602AD6C47000C70504 /* Assets.xcassets */,
 				FBCADB622AD6C47000C70504 /* LaunchScreen.storyboard */,
@@ -141,8 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCADB702AD6C7BB00C70504 /* FoodFormViewController.swift in Sources */,
 				FBCADB582AD6C46F00C70504 /* AppDelegate.swift in Sources */,
-				FBCADB6E2AD6C6A700C70504 /* Food.swift in Sources */,
+				FBCADB6E2AD6C6A700C70504 /* FavoriteFood.swift in Sources */,
 				FBCADB5A2AD6C46F00C70504 /* SceneDelegate.swift in Sources */,
 				FBCADB6C2AD6C49F00C70504 /* FoodsTableViewController.swift in Sources */,
 			);
